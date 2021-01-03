@@ -1,5 +1,35 @@
+/* eslint-disable */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap'); */
+
+* {
+  font-family: "Roboto";
+}
+#fonts {
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
 .hidden.menu {
   display: none;
+}
+p {
+  font-size: 1.25em;
+  line-height: 1.5em !important;
+}
+
+li {
+  font-size: 1.25em;
+  line-height: 1.5em !important;
+}
+
+.container {
 }
 
 .masthead.segment {
@@ -28,7 +58,7 @@
 }
 
 .ui.vertical.stripe {
-  padding: 8em 0;
+  padding: 6em 0;
 }
 
 .ui.vertical.stripe h3 {
@@ -89,6 +119,71 @@
   }
 }
 
+/* Food/coffee menu styles  */
+table {
+  width: 100%;
+  /* margin:100px auto; */
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 1.25em;
+}
+
+td {
+  padding: 1em 0 0 0;
+  vertical-align: bottom;
+  background-image: radial-gradient(black 1px, white 0px);
+  background-size: 8px 8px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+td span {
+  background-color: #fff;
+}
+
+td:first-child {
+  text-align: left;
+  font-weight: 700;
+}
+
+td:first-child span {
+  padding-right: 0.25em;
+}
+
+td:last-child {
+  text-align: right;
+  width: 3em;
+}
+
+td:last-child span {
+  padding-left: 0.25em;
+}
+
+.button {
+  background-color: #27583f !important;
+  margin-top: 1em !important;
+}
+
+.button:hover {
+  background-color: #1b3b2b !important;
+}
+
+.blurb {
+  font-size: 1.25em !important;
+}
+
+.icon-header {
+  font-size: 1.5em !important;
+}
+
+.menu-header {
+  font-size: 1.5em !important;
+}
+
+.no-bottom {
+  padding-bottom: 0;
+}
+
 /* Code blocks (Fix a strange bug with prismjs) */
 pre {
   padding: 1em;
@@ -96,4 +191,44 @@ pre {
   overflow: auto;
   border-radius: 0.3em;
   background: #272822;
+}
+
+ul.leaders {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+ul.leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . ";
+}
+
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+}
+
+/* Highlight current day of week in footer hours  */
+.col * {
+  margin: 75px auto;
+  width: 250px;
+}
+p > * {
+  margin: 5px 0;
+}
+.todaysDay {
+  color: #6754f5 !important;
 }

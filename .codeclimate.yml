@@ -1,27 +1,27 @@
 ---
 engines:
   csslint:
-    enabled: true
+    enabled: false
   duplication:
     enabled: true
     config:
       languages:
-      - javascript
+        - javascript
   eslint:
-    enabled: true
+    enabled: false
   fixme:
     enabled: true
   tslint:
-    enabled: true
+    enabled: false
     channel: beta
 ratings:
   paths:
-  - "**.tsx"
-  - "**.ts"
-  - "**.jsx"
-  - "**.js"
-  - "**.css"
+    - "**.tsx"
+    - "**.ts"
+    - "**.jsx"
+    - "**.js"
+    - "**.css"
 exclude_paths:
-- "test/"
-- "**/*.test.*"
-- "node_modules/"
+  - "test/"
+  - "**/*.test.*"
+  - "node_modules/"
